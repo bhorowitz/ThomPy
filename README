@@ -1,0 +1,42 @@
+NAME                                                                                                                                                                       
+     PyThom: NSTX Thompson Scattering Analysis Code                                                                                                                        
+                                                                                                                                                                           
+PURPOSE                                                                                                                                                                    
+     Analyze Output of NSTX Thomson Scattering Diagnostic                                                                                                                  
+                                                                                                                                                                           
+STATUS                                                                                                                                                                     
+     Under development and minimally operational. Modules are in ts.py.                                                                                                    
+                                                                                                                                                                           
+RUN                                                                                                                                                                        
+     module load nstx/python                                                                                                                                               
+     Python PyThom.py [SHOT NUMBER]                                                                                                                                        
+                                                                                                                                                                           
+USER INPUTS                                                                                                                                                                
+     Shot Number                                                                                                                                                           
+                                                                                                                                                                           
+OTHER INPUTS                                                                                                                                                               
+    - setup.netcdf (see utils, netcdf_gen.py)                                                                                                                              
+    - NSTX MDSplus structure                                                                                                                                               
+    - ./ss/ folder (a crutch till new datastream)                                                                                                                          
+                                                                                                                                                                           
+OTHER PARAMETERS                                                                                                                                                           
+    - # of processors on system (nproc)                                                                                                                                    
+                                                                                                                                                                           
+OUTPUTS                                                                                                                                                                    
+    [shot number].npz file which contains timings and \                                                                                                                    
+    profile information                                                                                                                                                    
+    - timing information is a (X) length array                                                                                                                             
+    - profile information is a (30,2,X) array                                                                                                                              
+                                                                                                                                                                           
+LOG                                                                                                                                                                        
+    20/06/13: Research Begins                                                                                                                                              
+    03/07/13: Prototyping Begins                                                                                                                                           
+    22/07/13: Importing Functional(?)                                                                                                                                      
+    24/07/13: Scattered Photo-electrons Functional                                                                                                                         
+    03/08/13: Fitting Functional                                                                                                                                           
+    03/13/13: MOC Operational                                                                                                                                              
+                                                                                                                                                                           
+CONTACT                                                                                                                                                                    
+    Ben Horowitz (Yale University)                                                                                                                                         
+    - Benjamin.a.Horowitz@yale.edu                                                                                                                                         
+    - Horowitz.Ben@gmail.com                                                                                                                                               
